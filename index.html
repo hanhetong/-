@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品经理作品集 | 你的名字</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">PM Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#works">作品集</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#experience">经历</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">☰</div>
+        </div>
+    </nav>
+
+    <!-- Hero 首屏 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">你好，我是</p>
+                <h1 class="hero-name">你的名字</h1>
+                <h2 class="hero-title">B端 / C端产品经理</h2>
+                <p class="hero-desc">
+                    专注用户需求挖掘与产品落地，擅长从0到1产品规划与原型设计。
+                    <br>用产品思维解决真实问题，用设计传递价值。
+                </p>
+                <div class="hero-buttons">
+                    <a href="#works" class="btn btn-primary">查看作品集</a>
+                    <a href="#contact" class="btn btn-outline">联系我</a>
+                </div>
+            </div>
+            <div class="hero-avatar">
+                <div class="avatar-circle">
+                    <!-- 替换为你的头像 -->
+                    <div class="avatar-placeholder">PM</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>向下滚动</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        信息管理与信息系统专业背景，具备技术理解力与产品思维。拥有多个从0到1的产品项目经验，
+                        熟练掌握需求调研、竞品分析、原型设计、PRD撰写、项目推进全流程。
+                    </p>
+                    <p>
+                        擅长B端 SaaS 产品设计与C端用户体验优化，注重数据驱动与用户价值平衡，
+                        能够独立完成产品从概念到上线的完整闭环。
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag">需求分析</span>
+                        <span class="tag">原型设计</span>
+                        <span class="tag">竞品分析</span>
+                        <span class="tag">用户研究</span>
+                        <span class="tag">数据驱动</span>
+                        <span class="tag">项目管理</span>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">完成项目</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">年产品经验</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">原型工具</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section id="works" class="section works">
+        <div class="container">
+            <h2 class="section-title">作品集</h2>
+            <p class="section-subtitle">精选原型设计与产品项目</p>
+            
+            <!-- 作品筛选标签 -->
+            <div class="work-filters">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="b端">B端产品</button>
+                <button class="filter-btn" data-filter="c端">C端产品</button>
+                <button class="filter-btn" data-filter="移动端">移动端</button>
+                <button class="filter-btn" data-filter="后台">后台系统</button>
+            </div>
+
+            <!-- 作品卡片网格 -->
+            <div class="works-grid">
+                <!-- 作品卡片 1 -->
+                <div class="work-card" data-category="b端 后台">
+                    <div class="work-thumbnail">
+                        <div class="work-img-placeholder work-img-1">
+                            <span>ERP 管理系统</span>
+                        </div>
+                        <div class="work-overlay">
+                            <a href="#" class="work-link">查看原型 →</a>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3 class="work-title">企业ERP管理系统</h3>
+                        <p class="work-desc">面向中型制造企业的资源管理平台，覆盖采购、库存、生产、财务四大模块</p>
+                        <div class="work-tags">
+                            <span>B端</span>
+                            <span>后台</span>
+                            <span>Axure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 作品卡片 2 -->
+                <div class="work-card" data-category="c端 移动端">
+                    <div class="work-thumbnail">
+                        <div class="work-img-placeholder work-img-2">
+                            <span>文旅 App</span>
+                        </div>
+                        <div class="work-overlay">
+                            <a href="#" class="work-link">查看原型 →</a>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3 class="work-title">非遗文旅数字化平台</h3>
+                        <p class="work-desc">整合非遗文化与旅游资源的移动端产品，实现线上体验+线下打卡闭环</p>
+                        <div class="work-tags">
+                            <span>C端</span>
+                            <span>移动端</span>
+                            <span>Figma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 作品卡片 3 -->
+                <div class="work-card" data-category="b端 后台">
+                    <div class="work-thumbnail">
+                        <div class="work-img-placeholder work-img-3">
+                            <span>数据中台</span>
+                        </div>
+                        <div class="work-overlay">
+                            <a href="#" class="work-link">查看原型 →</a>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3 class="work-title">BI 数据可视化平台</h3>
+                        <p class="work-desc">企业级数据分析中台，支持自助报表、多维度看板与实时数据监控</p>
+                        <div class="work-tags">
+                            <span>B端</span>
+                            <span>数据产品</span>
+                            <span>墨刀</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 作品卡片 4 -->
+                <div class="work-card" data-category="c端 移动端">
+                    <div class="work-thumbnail">
+                        <div class="work-img-placeholder work-img-4">
+                            <span>校园服务</span>
+                        </div>
+                        <div class="work-overlay">
+                            <a href="#" class="work-link">查看原型 →</a>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3 class="work-title">校园一体化服务小程序</h3>
+                        <p class="work-desc">整合教务、生活、社交的校园生态产品，覆盖学生全场景需求</p>
+                        <div class="work-tags">
+                            <span>C端</span>
+                            <span>小程序</span>
+                            <span>Axure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 作品卡片 5 -->
+                <div class="work-card" data-category="b端 后台">
+                    <div class="work-thumbnail">
+                        <div class="work-img-placeholder work-img-5">
+                            <span>CRM 系统</span>
+                        </div>
+                        <div class="work-overlay">
+                            <a href="#" class="work-link">查看原型 →</a>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3 class="work-title">客户关系管理系统</h3>
+                        <p class="work-desc">销售全流程管理平台，含线索跟进、客户画像、商机转化与业绩报表</p>
+                        <div class="work-tags">
+                            <span>B端</span>
+                            <span>SaaS</span>
+                            <span>Figma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 作品卡片 6 -->
+                <div class="work-card" data-category="移动端 c端">
+                    <div class="work-thumbnail">
+                        <div class="work-img-placeholder work-img-6">
+                            <span>音乐社区</span>
+                        </div>
+                        <div class="work-overlay">
+                            <a href="#" class="work-link">查看原型 →</a>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3 class="work-title">独立音乐社区 App</h3>
+                        <p class="work-desc">聚焦小众音乐人的内容社区，支持作品发布、演出信息与粉丝互动</p>
+                        <div class="work-tags">
+                            <span>C端</span>
+                            <span>社区</span>
+                            <span>Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能栈 -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">技能栈</h2>
+            <p class="section-subtitle">产品工具与核心能力</p>
+            
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>原型设计工具</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">Axure RP</div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Figma</div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">墨刀</div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">XMind</div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>产品核心能力</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">需求分析与PRD</div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 92%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">竞品分析</div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">用户研究</div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 82%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">数据分析</div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>技术与协作</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">SQL / Power BI</div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Jira / 禅道</div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">HTML/CSS 基础</div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">敏捷开发</div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 82%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目经历 -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title">项目经历</h2>
+            <p class="section-subtitle">从0到1的产品实践</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2026.03 - 至今</div>
+                        <h3 class="timeline-title">非遗文旅数字化平台 · 产品负责人</h3>
+                        <p class="timeline-desc">
+                            主导从0到1产品规划，完成用户调研、竞品分析与信息架构设计。
+                            输出高保真原型50+页面，推动开发落地，用户留存提升35%。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025.09 - 2026.02</div>
+                        <h3 class="timeline-title">企业BI数据可视化平台 · 产品经理</h3>
+                        <p class="timeline-desc">
+                            负责数据中台产品设计，梳理20+业务场景，搭建自助分析模块。
+                            优化看板配置流程，降低运营人员使用门槛，报表产出效率提升40%。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025.03 - 2025.08</div>
+                        <h3 class="timeline-title">校园服务小程序 · 产品实习生</h3>
+                        <p class="timeline-desc">
+                            参与需求收集与原型输出，独立完成3个核心功能模块设计。
+                            协助进行用户测试与迭代优化，累计服务用户超2000人。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024.10 - 2025.02</div>
+                        <h3 class="timeline-title">数客杯产品创新大赛 · 团队产品岗</h3>
+                        <p class="timeline-desc">
+                            带队完成达仁堂H5活动产品方案，输出完整PRD与原型演示。
+                            进入天津市赛，获得评委高度认可。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <p class="section-subtitle">期待与您交流</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>邮箱</h4>
+                            <p>your.email@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h4>电话</h4>
+                            <p>138-xxxx-xxxx</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p>github.com/yourname</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>所在地</h4>
+                            <p>天津 / 北京</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-cta">
+                    <h3>正在寻找产品经理岗位</h3>
+                    <p>如果您对我的作品感兴趣，欢迎下载简历或直接联系我</p>
+                    <a href="#" class="btn btn-primary btn-large">下载简历 PDF</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 你的名字 · 产品经理作品集</p>
+            <p>Built with ❤️ · Powered by GitHub Pages</p>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button id="backToTop" class="back-to-top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
